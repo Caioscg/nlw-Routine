@@ -4,12 +4,102 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+}
+
 body {
     background-color: #09090A;
     color: white;
 
-    display: grid;
-    place-items: center;
-
     height: 100vh;
+
+    padding: 10rem 12rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 1.6rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    background-color: transparent;
+    color: white;
+    border: 1px solid #8B5CF6;
+    border-radius: 8px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 125%;
+}
+
+main {
+    margin-top: 6.4rem;
+}
+
+form {
+    display: flex;
+}
+
+.habits {
+    margin-top: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.habit {
+    width: 4rem;
+    height: 6.4rem;
+    font-size: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    display: flex;
+    gap: 4.8rem;
+    margin-left: 3.2rem;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.day span {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 125%;
+    color: #A1A1AA;
+
+    margin-bottom: .8rem;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #18181B;
+
+    border: 2px solid #23232A;
+    border-radius: 8px;
+}
+
+input:checked {
+    background: #8B5CF6;
+    border: 2px solid #A78BFA;
 }
