@@ -21,6 +21,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    width: 70%;
+    background-color: #09090A;
 }
 
 button {
@@ -37,6 +41,8 @@ button {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     line-height: 125%;
+
+    cursor: pointer;
 }
 
 main {
@@ -45,6 +51,7 @@ main {
 
 form {
     display: flex;
+    margin-top: 18.2rem;
 }
 
 .habits {
@@ -102,4 +109,13 @@ input {
 input:checked {
     background: #8B5CF6;
     border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px) {
+    header {
+        width: 60%;
+    }
+    button div {
+        display: none;
+    }
 }
