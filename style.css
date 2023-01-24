@@ -94,6 +94,10 @@ form {
     margin-bottom: .8rem;
 }
 
+.day:last-child span {
+    margin-right: 2rem;
+}
+
 input {
     appearance: none;
     -webkit-appearance: none;
